@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="distribution" content="global"/>
+    <meta name="Googlebot" content="all"/>
+    <meta name="language" content="es_ES"/>
+    <link rel="alternate" hreflang="es" href="http://charruanews.appspot.com/" />
+    <meta name="keywords" content="Recopilacion de Noticias de Uruguay"/>    
+    <meta name="title" content="Noticias de Uruguay" />
+    <meta name="author" content="Matias Tafernaberry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noticias Uruguay">
+    <meta name="news_keywords" content="noticias Uruguay, ultimas noticias uruguayas">
+    <meta name="robots" content="index,follow">
+    <meta name="classification" content="noticias, información, diario, newspaper"/>
+    <meta name="google-site-verification" content="ocleHGlp-jG9sM73N5icA615Xi7NNg5tQfsHSbY9f80" />
+
+    <link rel="shortlink" href="img/favicon.png">
+    <meta property="og:image" content="img/favicon.png" />
+    <meta property='og:locale' content='es_ES'/>
+    <meta property='og:type' content='article'/>
+    <meta property='og:title' content='<a href="http://www.charruanews.appspot.com/">Notcias Uruguay</a>'/>
+    <meta property='og:description' content="Noticias Uruguay"/>
+    <meta property='og:url' content='http://www.charruanews.appspot.com/'/>
+    <meta property='og:site_name' content='Notcias Uruguay'/>
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Noticias de Uruguay</title>
+
+    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Long+Cang&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Orbitron|Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link link rel=stylesheet href="/css/bootstrap.css" type=text/css>
+    <link href="https://fonts.googleapis.com/css?family=Economica|Kite+One|Open+Sans+Condensed:300|Orbitron" rel="stylesheet"> 
+    <link link rel=stylesheet href="/css/style.css" type=text/css>
+    <link link rel=stylesheet href="/css/hover.css" type=text/css>
+
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-67501247-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6991630584262290",
+        enable_page_level_ads: true
+      });
+    </script>
+   <base href="/" target="_self">
+</head>
+<!-- Navigation -->
+<body>     
+    <div id="page" class="hfeed site">
+        {% include "templates/menu.html" %}
+        {% block body %}
+
+        {% endblock %}
+    </div>
+
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.aniview.js"></script>
+  <script src="/js/jquery.nested.js"></script>
+  <script src="/js/charrua.js"></script>
+  
+
+    <script>
+        jQuery(document).ready(function($){
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+        $(".headerwrap").addClass("darkHeader");
+    } else {
+        $(".headerwrap").removeClass("darkHeader");
+    }
+     if (scroll >= 380) {
+        $(".headerwrap").addClass("simpleheader");
+        $(".archive-side-bar").addClass("simpleMood");
+
+    } else {
+        $(".headerwrap").removeClass("simpleheader");
+            $(".archive-side-bar").removeClass("simpleMood");
+
+    }
+//archive custom    
+         if (scroll >= 80) {
+        $(".archive-side-bar").addClass("darkMood");
+//      $(".archive-side-bar").addClass("side-sticked");
+     
+
+    } else {
+        $(".archive-side-bar").removeClass("darkMood");
+//              $(".archive-side-bar").removeClass("side-sticked");
+
+
+    }
+    
+});
+  var body = $( 'body' );
+});
+</script>
+<script>jQuery(document).ready(function($){
+$(".icon-menu").click(function(){
+$(document).find("#top-bar").toggleClass("menu-opened");
+});
+ var body = $( 'body' );
+});</script>
+</body>
+</html>

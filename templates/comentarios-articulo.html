@@ -1,0 +1,41 @@
+
+{% block body %}
+	<!-- Page Content -->
+  	<div id="main" class="site-main comentarios">
+  		{% autoescape on %}
+  		<div class="container">
+  			<div class="row">
+		  		<div class="col-sm-3">&nbsp;</div>
+		  		<div class="formulario col-sm-6">
+		  			<div><h1>Comentarios</h1></div><br>
+		  			
+			  		<form action="/comentarios-articulo/" method="post">
+			  			<div class="form-group">
+							<input type="nombre" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<textarea  rows="10" cols="10" class="form-control" placeholder="Comentario" id="comentario" required name="comentario"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+				<div class="col-sm-3">&nbsp;</div>
+			</div>
+		</div>
+		{% if comentarios %}
+			<div class="container">
+				{% for co in comentarios %}
+  				<div class="row ">
+  					<div class="col-sm-3">&nbsp;</div>
+		  			<div class="col-sm-6 comentarios">{{ co.nombre|upper }}: {{ co.comentario }}</div>
+		  			<div class="col-sm-3">&nbsp;</div>
+		  		</div>
+		  		{% endfor %}
+		  	</div>
+		{% endif %}
+   		{% endautoescape %}
+	</div>
+{% endblock %}  

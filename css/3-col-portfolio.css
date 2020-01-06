@@ -1,0 +1,43 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item {
+    margin-bottom: 5px;
+    border: 3px solid #E9EAED;
+    padding: 10px;
+    background: #FFF;
+    /*border-top: 2px solid #E69F17;*/
+    /*border-left: 1px dotted #E67317;*/
+    /*box-shadow: 0px 4px 2px -4px #E69F17 !important;*/
+    /*border-top: 1px solid #D3D3D3;*/
+}
+.portfolio-item .similar{
+    margin-bottom: 5px;
+    border: 0px solid #E9EAED;
+    padding: 10px;
+    background: #FFF;
+    /*border-top: 2px solid #E69F17;*/
+    /*border-left: 1px dotted #E67317;*/
+    /*box-shadow: 0px 4px 2px -4px #E69F17 !important;*/
+    /*border-top: 1px solid #D3D3D3;*/
+}
+.el_pais{
+    border-top: 2px solid red !important;
+}
+.col-md-4{
+	border: 3px solid #E9EAED;
+	/*border-left: 1px solid #D3D3D3;
+	border-bottom: 1px solid #D3D3D3;*/
+	/*background: white;*/
+
+}
+footer {
+    margin: 50px 0;
+}
